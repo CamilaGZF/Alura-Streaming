@@ -1,0 +1,141 @@
+:root {
+    --branco: #FFFFFF;
+    --cinza: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+    --fonte-principal: 'Inter';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo);
+    color: var(--branco);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.principal {
+    background-image: url(Imagens/Fundo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__titulo{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0;
+}
+
+.container__botao {
+    background-color: var(--botao-azul);
+    text-decoration: none;
+    color: var(--branco);
+    padding: 1em;
+    border: 2px solid var(--branco);
+    border-radius: 5px;
+    display: block;
+    margin-bottom: 1em;
+}
+
+.botao_secundario{
+    background-color: transparent;
+}
+
+.container__aviso{
+    color: var(--cinza);
+    font-size: 12px;
+}
+
+.container__caixa{
+    margin: 0 2em;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 6em;
+}
+
+.secundario__imagem {
+    width: 75%;
+}
+
+.secundario__titulo {
+    font-size: 48px;
+    margin: 5%;
+    font-weight: 700;
+}
+
+.secundario__texto {
+    font-size: 16px;
+    color: var(--cinza);
+    padding: 2em;
+}
+
+.container__caixa {
+    align-items: center;
+}
+
+.terceiro__botao {
+    background-color: var(--botao-azul);
+    text-decoration: none;
+    color: var(--branco);
+    padding: 1em;
+    border: 2px solid var(--branco);
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 1em;
+    width: 25%;
+    margin: 5%;
+}
+
+.dispositivos{
+    text-align: center;
+}
+
+.dispositivos__lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 2em 0;
+}
+
+.rodape{
+    text-align: center;
+    padding: 5em;
+}
+
+.rodape__links{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1em;
+    text-decoration: none;
+    color: var(--branco);
+    font-size: 16px;
+}
+
+.rodape__texto{
+    color: var(--cinza);
+    font-size: 14px;
+}
